@@ -4,7 +4,7 @@ A class or module should have one, and only one, reason to change. If a class ha
 
 ## Bad Code Example
 
-```python
+<pre class="python">
 class Animal:
     def __init__(self, name: str):
         self.name = name
@@ -18,8 +18,7 @@ class Animal:
 
 animal = Animal('Lion')
 animal.save(animal)
-```
-{{execute}}
+</pre>
 
 ## Clone Example
 
