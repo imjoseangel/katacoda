@@ -4,7 +4,7 @@ A class or module should have one, and only one, reason to change. If a class ha
 
 ## Bad Code Example
 
-<pre class="python">
+<pre class="file">
 class Animal:
     def __init__(self, name: str):
         self.name = name
