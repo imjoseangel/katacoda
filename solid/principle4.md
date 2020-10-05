@@ -117,7 +117,7 @@ You can run it with the command `clear && python2 katacoda-solid-examples/exampl
 
 From the `Snake` class remove the `get_legs_lion` method and keep only this:
 
-<pre class="file" data-filename="katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py" data-target="replace">
+<pre class="file" data-target="clipboard">
 class Snake(Animal):
 
     def get_legs_mouse(self):
@@ -133,7 +133,9 @@ Run it again:
 
 The following error is thrown:
 
-`TypeError: Can't instantiate abstract class Snake with abstract methods get_legs_lion`
+```sh
+TypeError: Can't instantiate abstract class Snake with abstract methods get_legs_lion
+```
 
 ### Second example (Good Design Pattern)
 
