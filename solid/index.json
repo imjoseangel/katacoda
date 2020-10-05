@@ -6,24 +6,24 @@
   "details": {
     "steps": [
       {
-        "title": "Principle 1 - Single Responsibility",
-        "text": "step1.md"
+        "title": "Single Responsibility Principle",
+        "text": "principle1.md"
       },
       {
-        "title": "Principle 2 - Open-Closed",
-        "text": "step2.md"
+        "title": "Open-Closed Principle",
+        "text": "principle2.md"
       },
       {
-        "title": "Principle 3 - Liskov Substitution",
-        "text": "step3.md"
+        "title": "Liskov Substitution Principle",
+        "text": "principle3.md"
       },
       {
-        "title": "Principle 4 - Interface Segregation",
-        "text": "step4.md"
+        "title": "Interface Segregation Principle",
+        "text": "principle4.md"
       },
       {
-        "title": "Principle 5 - Dependency Inversion",
-        "text": "step5.md"
+        "title": "Dependency Inversion Principle",
+        "text": "principle5.md"
       }
     ],
     "intro": {
