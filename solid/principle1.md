@@ -28,4 +28,4 @@ Within the root of a repository, the examples are under a directory called `exam
 
 ## Run the Example
 
-The **example01.py** is the file name within the example directory. You can run it with the command `python3  katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{execute}}
+The **example01.py** is the file name within the example directory. You can run it with the command `clear && python3 katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{execute}}
