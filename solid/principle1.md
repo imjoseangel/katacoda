@@ -1,6 +1,6 @@
-A Katacoda course is defined by creating a pathway file. The pathway defines which scenarios should be included in the course and the order to display them.
+# Definition
 
-The collection of examples contains two courses, one to describe all the Katacoda content and another to describe the key Katacoda environments.
+A class or module should have one, and only one, reason to change. If a class has more than one responsibility, it becomes coupled. A change to one responsibility results to modification of the other responsibility.
 
 ## Clone Example
 
