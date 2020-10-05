@@ -9,88 +9,88 @@ There comes a point in software development where our app will be largely compos
 Lets look at the first example in this section:
 
 <pre class="file" data-target="clipboard">
-DEFAULT_LION_LEG_COUNT = 4
-DEFAULT_MOUSE_LEG_COUNT = 4
-DEFAULT_SNAKE_LEG_COUNT = 0
-
-class Animal:
+class Lion:
     pass
 
-def animal_leg_count(animals: list):
-    for animal in animals:
-        if isinstance(animal, Lion):
-            print(DEFAULT_LION_LEG_COUNT)
-        elif isinstance(animal, Mouse):
-            print(DEFAULT_MOUSE_LEG_COUNT)
-        elif isinstance(animal, Snake):
-            print(DEFAULT_SNAKE_LEG_COUNT)
+class Manager:
+    def __init__(self):
+        self.animal = None
 
-class Lion(Animal):
-    pass
+    def set_animal(self, animal):
+        assert isinstance(
+            animal, Lion), "`animal` must be of type {}".format(Lion)
 
-class Mouse(Animal):
-    pass
+        self.animal = animal
 
-class Snake(Animal):
-    pass
-
-animals = [
-    Lion(),
-    Mouse(),
-    Snake()
-]
-
-animal_leg_count(animals)
+    def get_legs_count(self):
+        if self.animal is not None:
+            self.animal.get_legs_count()
 </pre>
 
-To make this function follow the *Liskov Substitution Principle*, we will follow the requirements postulated by Steve Fenton:
+Here, `Manager` is the high-level component whereas `Lion` is the low-level component. This design violates *Dependency Inversion Principle* A: High-level modules should not depend on low-level level modules. It should depend upon its abstraction.
 
-If the super-class (`Animal`) has a method that accepts a super-class type (`Animal`) parameter, its sub-class(`Snake`) should accept as argument a super-class type (`Animal` type) or sub-class type (`Snake` type). If the
-super-class returns a super-class type (`Animal`), Its sub-class should return a super-class type (`Animal` type) or sub-class type (`Snake`). Now, we can re-implement `animal_leg_count` function:
+The `Manager` class is forced to depend upon the `Lion` class. If we need to change the `Manager` service, maybe we want to add animal sound, we will painstakingly have to move through all the instances of `Manager` to edit the code and this violates the *Open-Closed Principle*.
 
-<pre class="file" data-target="clipboard">
-DEFAULT_LION_LEG_COUNT = 4
-DEFAULT_MOUSE_LEG_COUNT = 4
-DEFAULT_SNAKE_LEG_COUNT = 0
-
-def animal_leg_count(animals: list):
-    for animal in animals:
-        print(animal.get_legs_count())
-</pre>
-
-The `animal_leg_count` function cares less the type of animal passed, it just calls the `leg_count` method.  All it knows is that the parameter must be of an animal type, either the `Animal` class or its sub-class.
-
-The `Animal` class now have to implement/define a `get_legs_count` method. And its sub-classes have to implement the `get_legs_count` method:
+The Manager class should care less the type of animal you are using. We make an Animal interface:
 
 <pre class="file" data-target="clipboard">
 class Animal:
+    __metaclass__ = ABCMeta
+
+    @abstractmethod
     def get_legs_count(self):
         pass
-
-class Lion(Animal):
-    def get_legs_count(self):
-        return DEFAULT_LION_LEG_COUNT
-
-class Mouse(Animal):
-    def get_legs_count(self):
-        return DEFAULT_MOUSE_LEG_COUNT
-
-class Snake(Animal):
-    def get_legs_count(self):
-        return DEFAULT_SNAKE_LEG_COUNT
-
-animals = [
-    Lion(),
-    Mouse(),
-    Snake()
-]
-
-animal_leg_count(animals)
 </pre>
 
-When it’s passed to the `animal_leg_count` function, it returns the number of legs an animal has.
+The Animal interface has a `get_legs_count` method. With this, we pass in an argument of type `Animal` to our `Manager` class:
 
-You see, the `animal_leg_count` doesn’t need to know the type of animal to return its leg count, it just calls the `get_legs_count` method of the animal type because by contract a sub-class of `Animal` class must implement the `get_legs_count` function.
+<pre class="file" data-target="clipboard">
+class Manager:
+    def __init__(self):
+        self.animal = None
+
+    def set_animal(self, animal):
+        assert isinstance(
+            animal, Animal), "`animal` must be of type {}".format(Animal)
+
+        self.animal = animal
+
+    def get_legs_count(self):
+        if self.animal is not None:
+            self.animal.get_legs_count()
+</pre>
+
+So now, no matter the type of `Animal` service passed to `Manager` it can easily get the animal properties without bothering to know the type of animal.
+
+We can now re-implement our `Lion` class to implement the `Animal` interface:
+
+<pre class="file" data-target="clipboard">
+class Lion(Animal):
+
+    def get_legs_count(self):
+        print(DEFAULT_LION_LEG_COUNT)
+</pre>
+
+We can create many `Animal` types and pass it to our `Manager` class without any fuss about errors:
+
+<pre class="file" data-target="clipboard">
+class Mouse(Animal):
+
+    def get_legs_count(self):
+        print(DEFAULT_MOUSE_LEG_COUNT)
+
+
+class Snake(Animal):
+
+    def get_legs_count(self):
+        print(DEFAULT_SNAKE_LEG_COUNT)
+</pre>
+
+Now, we can see that both high-level modules and low-level modules depend on abstractions. `Manager` class(high level module) depends on the `Animal` interface(abstraction) and the animal types(low level modules) in turn,
+depends on the `Animal` interface(abstraction).
+
+Also, this *Dependency Inversion Principle* will force us not to violate the *Liskov Substitution Principle*:
+The animal types Lion-Mouse-Snake are substitutable for their parent type `Animal`.
 
 ## Clone Example Repository
 
@@ -102,12 +102,12 @@ Within the root of a repository, the examples are under a directory called `exam
 
 ### First example (Bad Design Pattern)
 
-Open the *example01* file under the bad directory: `katacoda-solid-examples/examples/bad/03_liskovsubstitution/example01.py`{{open}}
+Open the *example01* file under the bad directory: `katacoda-solid-examples/examples/bad/05_dependencyinversion/example01.py`{{open}}
 
-You can run it with the command `clear && python3 katacoda-solid-examples/examples/bad/03_liskovsubstitution/example01.py`{{execute}}
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/bad/05_dependencyinversion/example01.py`{{execute}}
 
 ### Second example (Good Design Pattern)
 
-Open the *example01* file under the good directory: `katacoda-solid-examples/examples/good/03_liskovsubstitution/example01.py`{{open}}
+Open the *example01* file under the good directory: `katacoda-solid-examples/examples/good/05_dependencyinversion/example01.py`{{open}}
 
-You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/03_liskovsubstitution/example01.py`{{execute}}
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/05_dependencyinversion/example01.py`{{execute}}
