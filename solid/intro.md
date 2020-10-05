@@ -1,3 +1,5 @@
-In this scenario, you will learn how to create a course, a series of Katacoda scenarios collected together. 
+# SOLID Concepts with Python
 
-The advantage of creating a course is the ability to group related scenarios to provide users with a clear explanation and order to complete the content.
+In this scenario, you will learn about SOLID using different Python examples.
+
+Please use the Editor and the Terminal to experiment and understand the concepts running the provided examples.
