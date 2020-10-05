@@ -91,8 +91,24 @@ The most important methods are kept in the `Animal` class and used as Facade for
 
 Clone the example repository with the command `git clone https://github.com/imjoseangel/pythonsolid.git katacoda-solid-examples`{{execute}}
 
-Within the root of a repository, the examples are under a directory called `examples`. Open the *Bad Code Example* file: `katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{open}}
-
 ## Run the Examples
 
-The **example01.py** is the file name within the `examples` directory. You can run it with the command `clear && python3 katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{execute}}
+Within the root of a repository, the examples are under a directory called `examples`.
+
+### First example (Bad Design Pattern)
+
+Open the *example01* file under the bad directory: `katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{open}}
+
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{execute}}
+
+### Second example (Good Design Pattern)
+
+Open the *example01* file under the good directory: `katacoda-solid-examples/examples/good/01_singleresponsibility/example01.py`{{open}}
+
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/01_singleresponsibility/example01.py`{{execute}}
+
+### Third example (Good Design Pattern with Facade)
+
+Open the *example02* file under the good directory: `katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{open}}
+
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{execute}}
