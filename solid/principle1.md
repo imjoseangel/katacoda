@@ -24,7 +24,7 @@ animal.save(animal)
 
 Clone the example repository with the command `git clone https://github.com/imjoseangel/pythonsolid.git katacoda-solid-examples`{{execute}}
 
-Within the root of a repository, the examples are under a directory called `examples`. Open the *Bad Code Example* `katacoda-solid-examples/bad/01_singleresponsibility/example01.py`{{open}}.
+Within the root of a repository, the examples are under a directory called `examples`. Open the *Bad Code Example* `katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{open}}.
 
 Within the JSON file, the courses element defines each scenario. For example:
 
