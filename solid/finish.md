@@ -1,1 +1,1 @@
-Congratulations, you have learned how to make a course based on a collection of Katacoda scenarios.
+Congratulations, you have learned all about SOLID Principles. Keep experimenting and Learning.
