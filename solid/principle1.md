@@ -2,6 +2,24 @@
 
 A class or module should have one, and only one, reason to change. If a class has more than one responsibility, it becomes coupled. A change to one responsibility results to modification of the other responsibility.
 
+## Bad Code Example
+
+```python
+class Animal:
+    def __init__(self, name: str):
+        self.name = name
+
+    def get_name(self) -> str:
+        return f'My name is: {self.name}'
+
+    def save(self, animal):
+        pass
+
+
+animal = Animal('Lion')
+animal.save(animal)
+```
+
 ## Clone Example
 
 Clone the example repository with the command `git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
