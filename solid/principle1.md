@@ -55,7 +55,7 @@ db = AnimalDB()
 db.save(animal)
 </pre>
 
-> When designing our classes, we should aim to put related features together, so whenever they tend to change they change for the same reason.  And we should try to separate features if they will change for different reasons. - Steve Fenton
+> When designing our classes, we should aim to put related features together, so whenever they tend to change they change for the same reason.  And we should try to separate features if they will change for different reasons. - **Steve Fenton**
 
 The downside of this solution is that the clients of the this code have to deal with two classes.  A common solution to this dilemma is to apply the *Facade pattern*. The `Animal` class will be the Facade for the animal database management and the animal properties management.
 
