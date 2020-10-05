@@ -22,9 +22,9 @@ animal.save(animal)
 
 ## Clone Example
 
-Clone the example repository with the command `git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
+Clone the example repository with the command `git clone https://github.com/imjoseangel/pythonsolid.git katacoda-solid-examples`{{execute}}
 
-Within the root of a repository, a course has been created called `uilayouts`. The contents of the course have been defined as `katacoda-scenario-examples/uilayouts-pathway.json`{{open}}.
+Within the root of a repository, the examples are under a directory called `examples`. Open the *Bad Code Example* `katacoda-solid-examples/bad/01_singleresponsibility/example01.py`{{open}}.
 
 Within the JSON file, the courses element defines each scenario. For example:
 
