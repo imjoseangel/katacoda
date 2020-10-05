@@ -26,14 +26,6 @@ Clone the example repository with the command `git clone https://github.com/imjo
 
 Within the root of a repository, the examples are under a directory called `examples`. Open the *Bad Code Example* `katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{open}}.
 
-Within the JSON file, the courses element defines each scenario. For example:
+## Run the Example
 
-<pre class="file">
-{
-    "course_id": "uilayout-terminal",
-    "title": "Scenario with Terminal UI",
-    "description": "Katacoda Scenario Example"
-},
-</pre>
-
-The **course_id** is the scenario name directory within the course directory. For example `ls katacoda-scenario-examples/uilayouts/uilayout-terminal`{{execute}}. The **title** and **description** are shown on the course page.
+The **example01.py** is the file name within the example directory. You can run it with the command `python3  katacoda-solid-examples/examples/bad/01_singleresponsibility/example01.py`{{execute}}.
