@@ -115,6 +115,26 @@ Open the *example01* file under the bad directory: `katacoda-solid-examples/exam
 
 You can run it with the command `clear && python2 katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
 
+From the `Snake` class remove the `get_legs_lion` method and keep only this:
+
+<pre class="file" data-filename="katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py" data-target="replace">
+class Snake(Animal):
+
+    def get_legs_mouse(self):
+        print(DEFAULT_MOUSE_LEG_COUNT)
+
+    def get_legs_snake(self):
+        print(DEFAULT_SNAKE_LEG_COUNT)
+</pre>
+
+Run it again:
+
+`clear && python2 katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
+
+The following error is thrown:
+
+`TypeError: Can't instantiate abstract class Snake with abstract methods get_legs_lion`
+
 ### Second example (Good Design Pattern)
 
 Open the *example01* file under the good directory: `katacoda-solid-examples/examples/good/04_interfacesegregation/example01.py`{{open}}
