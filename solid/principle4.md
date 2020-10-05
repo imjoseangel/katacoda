@@ -113,10 +113,10 @@ Within the root of a repository, the examples are under a directory called `exam
 
 Open the *example01* file under the bad directory: `katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{open}}
 
-You can run it with the command `clear && python3 katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
+You can run it with the command `clear && python2 katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
 
 ### Second example (Good Design Pattern)
 
 Open the *example01* file under the good directory: `katacoda-solid-examples/examples/good/04_interfacesegregation/example01.py`{{open}}
 
-You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/04_interfacesegregation/example01.py`{{execute}}
+You can run it with the command `clear && python2 katacoda-solid-examples/examples/good/04_interfacesegregation/example01.py`{{execute}}
