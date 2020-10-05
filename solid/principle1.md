@@ -111,4 +111,4 @@ You can run it with the command `clear && python3 katacoda-solid-examples/exampl
 
 Open the *example02* file under the good directory: `katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{open}}
 
-You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{action}}
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{execute}}
