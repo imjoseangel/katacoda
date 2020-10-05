@@ -1,6 +1,6 @@
 {
-  "title": "Creating a Katacoda Course",
-  "description": "Learn how to create a collection of Katacoda scenarios into a course",
+  "title": "Solid Concepts",
+  "description": "Learn about SOLID concepts with Python programming language",
   "details": {
     "steps": [
       {
@@ -31,6 +31,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "node"
+    "imageid": "python:3.6"
   }
 }
