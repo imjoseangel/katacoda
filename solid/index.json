@@ -1,23 +1,29 @@
 {
   "title": "Solid Concepts",
   "description": "Learn about SOLID concepts with Python programming language",
+  "difficulty": "Intermediate",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Pathway Files",
+        "title": "Principle 1 - Single Responsibility",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Reusing Scenarios",
+        "title": "Principle 2 - Open-Closed",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Using katacoda CLI to create a course",
+        "title": "Principle 3 - Liskov Substitution",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Using katacoda CLI to add existing scenarios to a course",
+        "title": "Principle 4 - Interface Segregation",
         "text": "step4.md"
+      },
+      {
+        "title": "Principle 5 - Dependency Inversion",
+        "text": "step5.md"
       }
     ],
     "intro": {
@@ -31,6 +37,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "python:3.6"
+    "imageid": "python"
   }
 }
