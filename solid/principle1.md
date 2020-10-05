@@ -19,6 +19,7 @@ class Animal:
 animal = Animal('Lion')
 animal.save(animal)
 ```
+{{execute}}
 
 ## Clone Example
 
