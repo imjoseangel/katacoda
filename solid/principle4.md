@@ -133,9 +133,9 @@ Run it again:
 
 The following error is thrown:
 
-<pre class="file">
+```python
 TypeError: Can't instantiate abstract class Snake with abstract methods get_legs_lion
-</pre>
+```
 
 ### Second example (Good Design Pattern)
 
