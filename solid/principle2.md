@@ -187,3 +187,15 @@ You can run it with the command `clear && python3 katacoda-solid-examples/exampl
 Open the *example02* file under the good directory: `katacoda-solid-examples/examples/good/02_openclosed/example02.py`{{open}}
 
 You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/02_openclosed/example02.py`{{execute}}
+
+### Third example (Bad Design Pattern)
+
+Open the *example03* file under the bad directory: `katacoda-solid-examples/examples/bad/02_openclosed/example03.py`{{open}}
+
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/bad/02_openclosed/example03.py`{{execute}}
+
+### Fourth example (Good Design Pattern)
+
+Open the *example03* file under the good directory: `katacoda-solid-examples/examples/good/02_openclosed/example03.py`{{open}}
+
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/02_openclosed/example03.py`{{execute}}
