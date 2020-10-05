@@ -6,7 +6,7 @@ A class or module should have one, and only one, reason to change. If a class ha
 
 Lets look at the first example in this section:
 
-<pre class="file">
+<pre class="file" data-target="clipboard">
 class Animal:
     def __init__(self, name: str):
         self.name = name
@@ -35,7 +35,7 @@ You see this system smells of rigidity, it’s like a domino effect, touch one c
 
 To make this conform to *Single Responsibility Principle*, we create another class that will handle the sole responsibility of storing an animal to a database:
 
-<pre class="file">
+<pre class="file" data-target="clipboard">
 class Animal:
     def __init__(self, name: str):
         self.name = name
@@ -59,7 +59,7 @@ db.save(animal)
 
 The downside of this solution is that the clients of the this code have to deal with two classes.  A common solution to this dilemma is to apply the *Facade pattern*. The `Animal` class will be the Facade for the animal database management and the animal properties management.
 
-<pre class="file">
+<pre class="file" data-target="clipboard">
 class Animal:
     def __init__(self, name: str):
         self.name = name
@@ -111,4 +111,4 @@ You can run it with the command `clear && python3 katacoda-solid-examples/exampl
 
 Open the *example02* file under the good directory: `katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{open}}
 
-You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{execute}}
+You can run it with the command `clear && python3 katacoda-solid-examples/examples/good/01_singleresponsibility/example02.py`{{action}}
