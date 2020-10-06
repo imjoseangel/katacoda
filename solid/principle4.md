@@ -113,7 +113,7 @@ Within the root of a repository, the examples are under a directory called `exam
 
 Open the *example01* file under the bad directory: `katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{open}}
 
-You can run it with the command `clear && python2 katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
+You can run it with the command `clear && python katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
 
 From the `Snake` class remove the `get_legs_lion` method and keep only this:
 
@@ -129,7 +129,7 @@ class Snake(Animal):
 
 Run it again:
 
-`clear && python2 katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
+`clear && python katacoda-solid-examples/examples/bad/04_interfacesegregation/example01.py`{{execute}}
 
 The following error is thrown:
 
@@ -141,4 +141,4 @@ TypeError: Can't instantiate abstract class Snake with abstract methods get_legs
 
 Open the *example01* file under the good directory: `katacoda-solid-examples/examples/good/04_interfacesegregation/example01.py`{{open}}
 
-You can run it with the command `clear && python2 katacoda-solid-examples/examples/good/04_interfacesegregation/example01.py`{{execute}}
+You can run it with the command `clear && python katacoda-solid-examples/examples/good/04_interfacesegregation/example01.py`{{execute}}
