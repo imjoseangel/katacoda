@@ -6,6 +6,6 @@ Visit [https://www.katacoda.com/imjoseangel](https://www.katacoda.com/imjoseange
 
 ## Writing Scenarios
 
-Visit [Katacoda Docs](https://www.katacoda.com/docs) to learn more about creating Katacoda scenarios
+Visit [https://www.katacoda.com/docs](https://www.katacoda.com/docs) to learn more about creating Katacoda scenarios
 
-For examples, visit [Katacoda Examples](https://github.com/katacoda/scenario-example)
+For examples, visit [https://github.com/katacoda/scenario-example](https://github.com/katacoda/scenario-example)
