@@ -6,6 +6,41 @@
             "course_id": "kubernetes-101-01",
             "title": "01. Introduction",
             "description": "Kubernetes Cluster Introduction"
+        },
+        {
+            "course_id": "kubernetes-101-02",
+            "title": "02. Namespaces",
+            "description": "Kubernetes Namespaces Introduction"
+        },
+        {
+            "course_id": "kubernetes-101-03",
+            "title": "03. Pods I",
+            "description": "Kubernetes Pods Introduction I"
+        },
+        {
+            "course_id": "kubernetes-101-04",
+            "title": "04. Pods II",
+            "description": "Kubernetes Pods Introduction II"
+        },
+        {
+            "course_id": "kubernetes-101-05",
+            "title": "04. Deployments",
+            "description": "Kubernetes Deployments Introduction"
+        },
+        {
+            "course_id": "kubernetes-101-06",
+            "title": "06. Services",
+            "description": "Kubernetes Services Introduction"
+        },
+        {
+            "course_id": "kubernetes-101-07",
+            "title": "07. Storage",
+            "description": "Kubernetes Storage Management Introduction"
+        },
+        {
+            "course_id": "kubernetes-101-08",
+            "title": "08. Labels and Selectors",
+            "description": "Kubernetes Labels and Selectors Introduction"
         }
     ]
 }
