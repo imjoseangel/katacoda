@@ -12,10 +12,6 @@ Check that **Minikube** is running with the following command:
 
 `minikube version`{{execute}}
 
-And that we have the latest version installed:
-
-`minikube update-check`{{execute}}
-
 We can also find the all the possibilities that we have:
 
 `minikube`{{execute}}
@@ -30,7 +26,7 @@ Once **Minikube** is up and running, we can run a single-node cluster:
 
 If everything was fine, we should have a running Kubernetes cluster in our local machine.
 
-![minikube-architecture](../assets/images/minikube-architecture.webp)
+![minikube-architecture](../assets/images/minikube-architecture.png)
 
 Confirm the Cluster status with:
 `minikube status`{{execute}}
