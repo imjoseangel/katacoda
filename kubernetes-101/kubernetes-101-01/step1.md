@@ -6,8 +6,6 @@ In this lab we will cover basic concepts of Kubernetes. We will create a Kuberne
 
 In this lab, **Minikube** is already installed. To install it in your machine, follow the instructions in the [Minikube Installation Guide](https://minikube.sigs.k8s.io/docs/start/).
 
-Para instalarlo en un entorno Linux, deberemos instalar previamente un hypervisor como  [KVM](http://www.linux-kvm.org/) o [Virtualvox](https://www.virtualbox.org/wiki/Downloads) y el interfaz de línea de comando de Kubernetes: [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) .  Una vez cumplidos estos requisitos podemos realizar la instalación de Minikube con:
-
 ## Running Minikube
 
 Check that **Minikube** is running with the following command:
