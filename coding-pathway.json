@@ -3,7 +3,7 @@
     "description": "Coding Principles",
     "courses": [
         {
-            "course_id": "solid",
+            "course_id": "solid-01",
             "title": "01. Solid Principles",
             "description": "Solid Principles"
         }
