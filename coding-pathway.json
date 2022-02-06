@@ -1,0 +1,11 @@
+{
+    "title": "Coding 101",
+    "description": "Coding Principles",
+    "courses": [
+        {
+            "course_id": "solid",
+            "title": "01. Solid Principles",
+            "description": "Solid Principles"
+        }
+    ]
+}

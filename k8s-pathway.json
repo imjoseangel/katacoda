@@ -1,0 +1,11 @@
+{
+    "title": "Kubernetes 101",
+    "description": "Kubernetes Introduction Course",
+    "courses": [
+        {
+            "course_id": "kubernetes-01",
+            "title": "01. Introduction",
+            "description": "Kubernetes Cluster Introduction"
+        }
+    ]
+}
