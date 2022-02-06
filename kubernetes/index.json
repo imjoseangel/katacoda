@@ -21,6 +21,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "minikube-running"
+    "imageid": "kubernetes-cluster-running:1.20"
   }
 }
