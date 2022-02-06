@@ -1,51 +1,11 @@
 {
     "title": "Kubernetes 101",
-    "description": "Curso Introducción Kubernetes",
+    "description": "Kubernetes Introduction Course",
     "courses": [
         {
             "course_id": "kubernetes-101-01",
-            "title": "01. Introduccion",
-            "description": "Introduccion a minikube"
-        },
-        {
-            "course_id": "kubernetes-101-02",
-            "title": "02. Pods",
-            "description": "Introducción a los Pods"
-        },
-        {
-            "course_id": "kubernetes-101-03",
-            "title": "03. Pods II",
-            "description": "Introducción a los Pods II"
-        },
-        {
-            "course_id": "kubernetes-101-04",
-            "title": "04. Deployments",
-            "description": "Introducción a los Deployments"
-        },
-        {
-            "course_id": "kubernetes-101-05",
-            "title": "05. Labels y Selectors",
-            "description": "Introducción a los Labels y Selectors"
-        },
-        {
-            "course_id": "kubernetes-101-06",
-            "title": "06. Services",
-            "description": "Introducción a los Servicios"
-        },
-        {
-            "course_id": "kubernetes-101-07",
-            "title": "07. Namespaces",
-            "description": "Introducción a los Namespaces"
-        },
-        {
-            "course_id": "kubernetes-101-08",
-            "title": "08. Almacenamiento",
-            "description": "Introducción al almacenamiento en Kubernetes."
-        },
-        {
-            "course_id": "kubernetes-101-09",
-            "title": "09. Ejemplo",
-            "description": "Ejemplos."
+            "title": "01. Introduction",
+            "description": "Kubernetes Cluster Introduction"
         }
     ]
 }
