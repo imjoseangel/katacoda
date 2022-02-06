@@ -6,8 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Namespaces",
-        "text": "kubernetes1.md"
+        "title": "Create a Kubernetes cluster",
+        "text": "step1.md"
       }
     ],
     "intro": {

@@ -7,4 +7,4 @@ Please use the Editor and the Terminal to experiment and understand the concepts
 ## Objectives
 
 - Introduction to Kubernetes concepts.
-- Minikube frist steps.
+- First steps with Minikube.
