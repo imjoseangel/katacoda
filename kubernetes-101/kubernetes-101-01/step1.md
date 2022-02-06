@@ -26,7 +26,7 @@ Once **Minikube** is up and running, we can run a single-node cluster:
 
 If everything was fine, we should have a running Kubernetes cluster in our local machine.
 
-![minikube-architecture](../assets/images/minikube-architecture.png)
+![minikube-architecture](./assets/images/minikube-architecture.png)
 
 Confirm the Cluster status with:
 `minikube status`{{execute}}
