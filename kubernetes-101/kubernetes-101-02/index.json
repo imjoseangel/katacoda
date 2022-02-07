@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes Concepts",
-  "description": "Learn basic Kubernetes concepts",
+  "title": "Kubernetes Namespaces",
+  "description": "Introduction to Kubernetes Namespaces",
   "difficulty": "Beginner",
   "time": "45-60 minutes",
   "details": {
