@@ -8,10 +8,6 @@
       {
         "title": "Discovering our Kubernetes cluster",
         "text": "step1.md"
-      },
-      {
-        "title": "Kubernetes Cluster Nodes",
-        "text": "step2.md"
       }
     ],
     "intro": {
