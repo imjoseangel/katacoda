@@ -37,6 +37,8 @@ To find the different characteristics of a namespace, we can use the command:
 
 `kubectl describe namespace develop`{{execute}}
 
+or
+
 `kubectl describe ns develop`{{execute}}
 
 We can also get the namespace definion in YAML format:
