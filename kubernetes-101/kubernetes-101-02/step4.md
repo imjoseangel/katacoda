@@ -39,6 +39,14 @@ Let's check the applied limits:
 
 `kubectl describe namespace test`{{execute}}
 
+```sh
+Resource Limits
+ Type       Resource  Min    Max  Default Request  Default Limit  Max Limit/Request Ratio
+ ----       --------  ---    ---  ---------------  -------------  -----------------------
+ Container  cpu       500m   4    500m             1              -
+ Container  memory    128Mi  1Gi  256Mi            512Mi          -
+```
+
 To confirm that the Pods are created with the limits, we can run an NGINX pod in the namespace using the imperative command:
 
 `kubectl run nginx --image=nginx -n test`{{execute}}
@@ -48,3 +56,12 @@ To confirm that the Pods are created with the limits, we can run an NGINX pod in
 We can check the CPU and memory usage of the pod:
 
 `kubectl describe pod nginx -n test`{{execute}}
+
+```yaml
+    Limits:
+      cpu:     1
+      memory:  512Mi
+    Requests:
+      cpu:        500m
+      memory:     256Mi
+```
