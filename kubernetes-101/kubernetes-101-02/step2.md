@@ -44,3 +44,19 @@ or
 We can also get the namespace definion in YAML format:
 
 `kubectl get ns develop -o yaml`{{execute}}
+
+## Removing namespaces
+
+To delete a namespace, we can also use the imperative and the declarative commands:
+
+- The imperative way:
+
+`kubectl delete namespace development`{{execute}}
+
+- The declarative way:
+
+`kubectl delete -f kubernetes/labs/02-namespaces/lab1/develop-ns.yaml`{{execute}}
+
+We can check that the namespaces has been successfully deleted by running the command:
+
+`kubectl get namespaces`{{execute}}
