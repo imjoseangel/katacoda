@@ -25,7 +25,7 @@ spec:
 
 To run the above YAML, we need to use the `--filename` or `-f` flag:
 
-`kubectl apply -f kubernetes/02-namespaces/lab1/development-namespace.yaml`{{execute}}
+`kubectl apply -f kubernetes/02-namespaces/lab1/develop-namespace.yaml`{{execute}}
 
 Check the namespace created by running the command:
 
@@ -35,10 +35,10 @@ Check the namespace created by running the command:
 
 To find the different characteristics of a namespace, we can use the command:
 
-`kubectl describe namespace development`{{execute}}
+`kubectl describe namespace develop`{{execute}}
 
-`kubectl describe ns development`{{execute}}
+`kubectl describe ns develop`{{execute}}
 
 We can also get the namespace definion in YAML format:
 
-`kubectl get ns development -o yaml`{{execute}}
+`kubectl get ns develop -o yaml`{{execute}}
