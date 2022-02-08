@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Discovering our Kubernetes cluster",
+        "title": "Step 1",
         "text": "step1.md"
       },
       {
-        "title": "Kubernetes Cluster Nodes",
+        "title": "Step 2",
         "text": "step2.md"
       }
     ],
