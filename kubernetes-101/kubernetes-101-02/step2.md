@@ -25,7 +25,7 @@ spec:
 
 To run the above YAML, we need to use the `--filename` or `-f` flag:
 
-`kubectl apply -f kubernetes/02-namespaces/lab1/develop-namespace.yaml`{{execute}}
+`kubectl apply -f kubernetes/labs/02-namespaces/lab1/develop-ns.yaml`{{execute}}
 
 Check the namespace created by running the command:
 
