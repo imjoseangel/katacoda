@@ -2,7 +2,7 @@
   "title": "Kubernetes Namespaces",
   "description": "Introduction to Kubernetes Namespaces",
   "difficulty": "Beginner",
-  "time": "45-60 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
