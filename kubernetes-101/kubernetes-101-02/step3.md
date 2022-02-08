@@ -10,7 +10,7 @@ and check that it has been created:
 
 In our example, we are going to create a pod in the **development** namespace.
 
-```yaml
+<pre class="file" data-target="clipboard">
 ---
 apiVersion: v1
 kind: Pod
@@ -25,8 +25,7 @@ spec:
     - sleep
     - "3600"
     imagePullPolicy: IfNotPresent
-    resources: {}
-```
+</pre>
 
 `kubectl create -f kubernetes/labs/02-namespaces/lab2/pod.yaml`{{execute}}
 

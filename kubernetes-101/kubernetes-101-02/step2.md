@@ -12,7 +12,7 @@ We can create namespaces in two ways:
 
 - Using the declarative mode (With YAML):
 
-```yaml
+<pre class="file" data-target="clipboard">
 ---
 apiVersion: v1
 kind: Namespace
@@ -20,8 +20,7 @@ metadata:
   name: develop
 spec:
   finalizers:
-  - kubernetes
-```
+</pre>
 
 To run the above YAML, we need to use the `--filename` or `-f` flag:
 
