@@ -2,7 +2,7 @@
 
 ## Nodes
 
-> A Kubernetes Node is a unique host. It can be a physical machine or a virtual machine. The role of a Node is to run the Kubernetes Pods (the smallest, most basic deployable objects in Kubernetes) and for the communication between them. Every node, runs the **kubelet** and the **kube-proxy** components. The nodes are managed by the Control Plane host.
+> A Kubernetes Node is a unique host. It can be a physical machine or a virtual machine. The role of a Node is to run the Kubernetes Pods (the smallest, most basic deployable resources in Kubernetes) and for the communication between them. Every node, runs the **kubelet** and the **kube-proxy** components. The nodes are managed by the Control Plane host.
 
 To see the nodes that are part of the cluster, run the command:
 

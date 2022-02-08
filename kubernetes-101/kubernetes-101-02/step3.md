@@ -1,4 +1,4 @@
-# Creating objects in a namespace
+# Creating resources in a namespace
 
 First, we need to create a namespace called **development**:
 

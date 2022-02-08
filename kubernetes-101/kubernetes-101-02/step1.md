@@ -12,7 +12,7 @@ We can request the different namespaces from the Kubernetes API server using the
 
 There are three Namespaces that are created when a Kubernetes cluster is deployed. These are _default_, _kube-system_ (for Kubernetes System resources) and _kube-public_ (for Public resources, although this is not commonly utilized).
 
-- **kube-system** This namespace has the system objects needed for Kubernetes to work. We can see the pods running in this namespace by using the command:
+- **kube-system** This namespace has the system resources needed for Kubernetes to work. We can see the pods running in this namespace by using the command:
 
 `kubectl get pods -n kube-system`{{execute}}
 
