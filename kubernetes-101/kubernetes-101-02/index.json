@@ -16,6 +16,10 @@
       {
         "title": "Creating objects in a namespace",
         "text": "step3.md"
+      },
+      {
+        "title": "Namespace Limits",
+        "text": "step4.md"
       }
     ],
     "intro": {
