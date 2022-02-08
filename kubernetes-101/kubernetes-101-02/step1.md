@@ -9,3 +9,23 @@ We can request the different namespaces from the Kubernetes API server using the
 `kubectl get namespace`{{execute}}
 
 ![namespaces](./assets/namespaces.png)
+
+There are three Namespaces that are created when a Kubernetes cluster is deployed. These are _default_, _kube-system_ (for Kubernetes System resources) and _kube-public_ (for Public resources, although this is not commonly utilized).
+
+- **kube-system** This namespace has the system objects needed for Kubernetes to work. We can see the pods running in this namespace by using the command:
+
+`kubectl get pods -n kube-system`{{execute}}
+
+- **kube-public**  This namespace is created also automatically and is readable by all users, including those not authenticated. This namespace is mainly reserved for internal use, in the case that we need to expose a service to the public. The public nature of this namespace is just a convention, not a pre-requisite. The _kube-public_ namespace has a ConfigMap that contains the bootstrap and the configuration certificate for the Cluster.
+
+We can see the configmap in this namespace by using the command:
+
+`kubectl get configmap -n kube-public cluster-info -o yaml`{{execute}}
+
+- **default** This is the _default_ namespace for all the resources that are created without a namespace specification. It is empty by default.
+
+`kubectl get pods -n default`{{execute}}
+
+These three namespaces cannot be deleted. You can try deleting them with the command:
+
+`kubectl delete namespace kube-system default kube-public`{{execute}}
