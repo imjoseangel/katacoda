@@ -22,7 +22,7 @@ We can see the configmap in this namespace by using the command:
 
 `kubectl get configmap -n kube-public cluster-info -o yaml`{{execute}}
 
-- **kube-node-lease** This namespace introduces a Lease built-in API that makes it reusable for different purposes. It makes node heartbeats significantly cheaper from both scalability and performance perspective.
+- **kube-node-lease** This namespace introduces a Lease built-in API that makes it reusable for other purposes 3rd party device monitoring plugins. It makes node heartbeats significantly cheaper from both scalability and performance perspective.
 
 - **default** This is the _default_ namespace for all the resources that are created without a namespace specification. It is empty by default.
 
