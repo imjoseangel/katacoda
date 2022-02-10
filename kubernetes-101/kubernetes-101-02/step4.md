@@ -14,6 +14,7 @@ apiVersion: v1
 kind: LimitRange
 metadata:
   name: resources
+  namespace: test
 spec:
   limits:
   - default:
